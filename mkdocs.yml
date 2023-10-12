@@ -1,0 +1,42 @@
+site_author: Edu
+site_name: Edu-mkdocs
+site-description: Mi primera práctica en Mkdocs-GitHub Pages
+nav:
+    - Inicio: index.md
+    - planetas.md
+    - enlaces_interes.md
+    - historia_html.md
+theme:
+    name: material
+    language: es
+    features:
+      - navigation.top
+      - navigation.sections
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.indexes
+      - header.autohide
+    palette:
+      - media: "(prefers-color-scheme: light)"
+        sheme: default
+        accent: purle
+        primary: pink
+        toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: black
+        toggle: 
+          icon: material/toggle-switch
+          name: Switch to light mode
+mardown_extensions:
+  - pymdownx.highlight:
+      anchor_linemus: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+plugins:
+  - search
+
+copyright: edu 2023
